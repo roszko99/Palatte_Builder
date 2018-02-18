@@ -7,7 +7,7 @@ int freeBlocks(sf::RectangleShape *blocks[][BLOCKS_DIM]);
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(BLOCKS_DIM * BLOCK_WIDTH, BLOCKS_DIM * BLOCK_WIDTH), "palatte_producer");
-	PalwinUtil inputHandler(&window);
+	//PalwinUtil inputHandler(&window);
 	sf::RectangleShape *blocks[BLOCKS_DIM][BLOCKS_DIM];
 
 	initBlocks(blocks);
@@ -21,7 +21,7 @@ int main()
 		{
 			switch (event.type) {
 			case sf::Event::MouseButtonPressed:			// On click:
-				inputHandler.handleMouseEvent(event);
+				CustomPalatte::recolorify(blocks, CustomPalatte::SIMPLE);
 				break;
 			case sf::Event::Closed:						// On close:
 				window.close();							// Close window
