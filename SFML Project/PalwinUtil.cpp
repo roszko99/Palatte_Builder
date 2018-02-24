@@ -16,7 +16,7 @@ PalwinUtil::~PalwinUtil() {
 
 int PalwinUtil::handleMouseEvent(sf::Event event) {
 	if (event.mouseButton.button == sf::Mouse::Left) {
-		CustomPalatte::recolorify()
+		//CustomPalatte::recolorify(
 	}
 	else if (event.mouseButton.button == sf::Mouse::Right) {
 

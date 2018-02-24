@@ -7,7 +7,7 @@
 class PalwinUtil 
 {
 public:
-	PalwinUtil(sf::RenderWindow *window, sf::RectangleShape **blocks);
+	PalwinUtil(sf::RenderWindow *win, sf::RectangleShape **blocks);
 	~PalwinUtil();
 	int handleMouseEvent(sf::Event event);
 private:
